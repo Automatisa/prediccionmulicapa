@@ -12,12 +12,24 @@ import java.util.StringTokenizer;
  */
 public class Transacciones {
     public static boolean cargarDatos(String tabla)
-    {
-        
+    {    
         if(serviciosDB.ejecutarConsulta("SELECT * FROM "+tabla))
             return true;
         return false;
     }
-   
-    
+    public static int cuentaRegistros(String tabla)
+    {
+        int nr=0;
+        try
+        {
+        String q;    
+        q="SELECT COUNT(*) FROM "+tabla;
+        serviciosDB.ejecutarConsulta(q);
+        if (serviciosDB.resultado.first())
+        nr = serviciosDB.resultado.getInt(1);
+        } catch (SQLException e) {
+            System.err.println("Error");
+        }
+        return nr;
+    }
 }
