@@ -1,0 +1,19 @@
+/* 
+    Document   : style
+    Created on : 31/05/2012, 11:58:43 PM
+    Author     : johnny
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#divResEnt{
+    width: 380px;
+    height: 40px;
+    padding: 10px;
+    background-color: #ffffff
+}
+

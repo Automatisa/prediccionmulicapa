@@ -10,6 +10,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Predecir Sueldo</title>
+        <script type="text/javascript" languaje="javascript" src="jquery-1.7.js"></script>
+        <script type="text/javascript" languaje="javascript" src="eventos.js"></script>
+        <link type="text/css" rel="stylesheet" href="style.css">
     </head>
     <body>
         <div>
@@ -163,8 +166,8 @@
                         </td>
                         <td>
                             <select name="cboSexo" id="cboSexo">
-                                <option value="1/2">Female</option>
-                                <option value="2/2">Male</option>
+                                <option value="2/2">Female</option>
+                                <option value="1/2">Male</option>
                             </select>
                         </td>
                     </tr>
@@ -244,14 +247,17 @@
                     </tr>
                     <tr>
                         <td style="width: 150px">
-                            <input type="button" name="entrenar" id="can" value="ENTRENAR"/>
+                            <input type="button" name="entrenar" id="cmdEntrenar" value="ENTRENAR"/>
                         </td>
                         <td>
-                            <input type="button" name="calcular" id="cal" value="CALCULAR"/>
+                            <input type="button" name="calcular" id="cmdCalcular" value="CALCULAR"/>
                         </td>
                     </tr>
                 </table>
             </form>
+        </div>
+        <div id="divResEnt">
+           
         </div>
     </body>
 </html>
