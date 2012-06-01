@@ -5,7 +5,28 @@
         <data xmlns="http://www.netbeans.org/ns/web-project/3">
             <name>mayor50kmulticapa</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
-            <web-module-libraries/>
+            <web-module-libraries>
+                <library dirs="200">
+                    <file>${file.reference.encog-engine-2.5.3.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.JOCL-0.1.3a-beta.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.mysql-connector-java-5.1.18-bin.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.neural-nets-0.0.1-SNAPSHOT.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.neuroph-2.6.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+            </web-module-libraries>
             <web-module-additional-libraries/>
             <source-roots>
                 <root id="src.dir" name="Source Packages"/>
