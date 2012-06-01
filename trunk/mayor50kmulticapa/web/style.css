@@ -14,6 +14,47 @@ root {
     width: 380px;
     height: 40px;
     padding: 10px;
-    background-color: #ffffff
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #9898b5;
+    margin: 0 auto;
+}
+#divResEnt h3{
+    font-size: 16px;
+    color: #3c3c3c;
 }
 
+#divFormulario{
+    padding: 10px;
+    width: 380px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid;
+    border-color: #9898b5;
+}
+
+#divCabForm{
+    width: 380px;
+    height: 40px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #9898b5;
+    margin: 0 auto;
+    background-color: #454476;
+    color:#ffffff;
+    text-align: center;
+}
+#divFooter{
+    width: 380px;
+    height: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #9898b5;
+    margin: 0 auto;
+    background-color: #454476;
+    color:#ffffff;
+    font-size: 11px;
+    text-align: right;
+}
