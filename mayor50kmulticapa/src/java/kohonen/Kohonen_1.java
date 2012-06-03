@@ -102,6 +102,7 @@ public class Kohonen_1{
            double[] input = new double[]{resultado.getFloat(2),resultado.getFloat(3),resultado.getFloat(4),resultado.getFloat(5),resultado.getFloat(6),resultado.getFloat(7),resultado.getFloat(8),resultado.getFloat(9),resultado.getFloat(10),resultado.getFloat(11),resultado.getFloat(12),resultado.getFloat(13),resultado.getFloat(14),resultado.getFloat(15)};
            neuralNetwork.setInput(input);
            neuralNetwork.calculate();
+           
            double[] output = neuralNetwork.getOutput();
            for (int i=0; i<output.length;i++){
                //neuralNetwork.createConnection(null, null, i)
