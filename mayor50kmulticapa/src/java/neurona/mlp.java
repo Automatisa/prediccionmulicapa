@@ -75,10 +75,10 @@ public class mlp {
             }
         }
         
-        myMlPerceptron = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 14,12, 1);
+        myMlPerceptron = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 14,18,1);
         // learn the training set
-        ((LMS) myMlPerceptron.getLearningRule()).setMaxError(0.00001);
-        ((LMS) myMlPerceptron.getLearningRule()).setMaxIterations(5000);
+        ((LMS) myMlPerceptron.getLearningRule()).setMaxError(0.05);
+        ((LMS) myMlPerceptron.getLearningRule()).setMaxIterations(3000);
         ((LMS) myMlPerceptron.getLearningRule()).setLearningRate(0.5);
         myMlPerceptron.learnInSameThread(trainingSet);
 
@@ -101,10 +101,10 @@ public class mlp {
         double[] networkOutput = myMlPerceptron.getOutput();
         if (networkOutput[0]>0.5)
                 {
-                    return ">50K";
+                    return ">50K "+String.valueOf(networkOutput[0]);
                 }else
                 {
-                    return "<=50K";
+                    return "<=50K "+String.valueOf(networkOutput[0]);
                 }
         }
         catch(Exception e){

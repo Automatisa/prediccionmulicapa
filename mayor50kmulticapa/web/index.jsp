@@ -43,14 +43,14 @@
                         </td>
                         <td>
                             <select name="cboArea" id="cboArea">
-                                <option value="1">Private</option>
-                                <option value="2">Self-emp-not-inc</option>
-                                <option value="3">Self-emp-inc</option>
-                                <option value="4">Federal-gov</option>
-                                <option value="5">Local-gov</option>
-                                <option value="6">State-gov</option>
-                                <option value="7">Without-pay</option>
-                                <option value="8">Never-worked</option>
+                                <option value="4">Private</option>
+                                <option value="4">Self-emp-not-inc</option>
+                                <option value="4">Self-emp-inc</option>
+                                <option value="8">Federal-gov</option>
+                                <option value="8">Local-gov</option>
+                                <option value="8">State-gov</option>
+                                <option value="0">Without-pay</option>
+                                <option value="0">Never-worked</option>
                             </select>
                         </td>
                     </tr>
@@ -68,21 +68,22 @@
                         </td>
                         <td>
                             <select name="cboEducacion" id="cboEducacion">
-                                <option value="1">Bachelors</option>
-                                <option value="2">Some-college</option>
-                                <option value="3">11th</option>
-                                <option value="4">HS-grad</option>
-                                <option value="5">Assoc-acdm</option>
-                                <option value="6">Assoc-voc</option>
-                                <option value="7">9th</option>
-                                <option value="8">7th-8th</option>
-                                <option value="9">12th</option>
-                                <option value="10">Masters</option>
-                                <option value="11">1st-4th</option>
-                                <option value="12">10th</option>
-                                <option value="13">Doctorate</option>
-                                <option value="14">5th-6th</option>
-                                <option value="15">Preschool</option>
+                                <option value="16">Bachelors</option>
+                                <option value="16">Some-college</option>
+                                <option value="16">Prof-school</option>
+                                <option value="0">11th</option>
+                                <option value="16">HS-grad</option>
+                                <option value="16">Assoc-acdm</option>
+                                <option value="16">Assoc-voc</option>
+                                <option value="0">9th</option>
+                                <option value="0">7th-8th</option>
+                                <option value="0">12th</option>
+                                <option value="16">Masters</option>
+                                <option value="0">1st-4th</option>
+                                <option value="0">10th</option>
+                                <option value="16">Doctorate</option>
+                                <option value="0">5th-6th</option>
+                                <option value="0">Preschool</option>
                             </select>
                         </td>
                     </tr>
@@ -100,12 +101,12 @@
                         </td>
                         <td>
                             <select name="cboMarital-status" id="cboMarital-status">
-                                <option value="1">Married-civ-spouse</option>
-                                <option value="2">Divorced</option>
-                                <option value="3">Never-married</option>
-                                <option value="4">Separated</option>
-                                <option value="5">Widowed</option>
-                                <option value="6">Married-spouse-absent</option>
+                                <option value="7">Married-civ-spouse</option>
+                                <option value="4">Divorced</option>
+                                <option value="4">Never-married</option>
+                                <option value="2">Separated</option>
+                                <option value="2">Widowed</option>
+                                <option value="7">Married-spouse-absent</option>
                                 <option value="7">Married-AF-spouse</option>
                             </select>
                         </td>
@@ -139,12 +140,12 @@
                         </td>
                         <td>
                             <select name="cboRelationship" id="cboRelationship">
-                                <option value="1">Wife</option>
-                                <option value="2">Own-child</option>
-                                <option value="3">Husband</option>
+                                <option value="5">Wife</option>
+                                <option value="3">Own-child</option>
+                                <option value="6">Husband</option>
                                 <option value="4">Not-in-family</option>
-                                <option value="5">Other-relative</option>
-                                <option value="6">Unmarried</option>
+                                <option value="2">Other-relative</option>
+                                <option value="1">Unmarried</option>
                             </select>
                         </td>
                     </tr>
@@ -154,11 +155,11 @@
                         </td>
                         <td>
                             <select name="cboRaza" id="cboRaza">
-                                <option value="1">White</option>
-                                <option value="2">Asian-Pac-Islander</option>
-                                <option value="3">Amer-Indian-Eskimo</option>
-                                <option value="4">Other</option>
-                                <option value="5">Black</option>
+                                <option value="5">White</option>
+                                <option value="3">Asian-Pac-Islander</option>
+                                <option value="2">Amer-Indian-Eskimo</option>
+                                <option value="1">Other</option>
+                                <option value="4">Black</option>
                             </select>
                         </td>
                     </tr>
@@ -203,47 +204,47 @@
                         </td>
                         <td>
                             <select name="cboPais" id="cboPais">
-                                <option value="1">United-States</option>
-                                <option value="2">Cambodia</option>
-                                <option value="3">England</option>
-                                <option value="4">Puerto-Rico</option>
-                                <option value="5">Canada</option>
-                                <option value="6">Germany</option>
-                                <option value="7">Outlying-US(Guam-USVI-etc)</option>
-                                <option value="8">India</option>
-                                <option value="9">Japan</option>
-                                <option value="10">Greece</option>
+                                <option value="41">United-States</option>
+                                <option value="11">Cambodia</option>
+                                <option value="31">England</option>
+                                <option value="11">Puerto-Rico</option>
+                                <option value="31">Canada</option>
+                                <option value="31">Germany</option>
+                                <option value="11">Outlying-US(Guam-USVI-etc)</option>
+                                <option value="1">India</option>
+                                <option value="31">Japan</option>
+                                <option value="31">Greece</option>
                                 <option value="11">South</option>
-                                <option value="12">China</option>
-                                <option value="13">Cuba</option>
-                                <option value="14">Iran</option>
-                                <option value="15">Honduras</option>
-                                <option value="16">Philippines</option>
-                                <option value="17">Italy</option>
-                                <option value="18">Poland</option>
-                                <option value="19">Jamaica</option>
-                                <option value="20">Vietnam</option>
+                                <option value="21">China</option>
+                                <option value="1">Cuba</option>
+                                <option value="1">Iran</option>
+                                <option value="1">Honduras</option>
+                                <option value="1">Philippines</option>
+                                <option value="31">Italy</option>
+                                <option value="31">Poland</option>
+                                <option value="11">Jamaica</option>
+                                <option value="1">Vietnam</option>
                                 <option value="21">Mexico</option>
-                                <option value="22">Portugal</option>
-                                <option value="23">Ireland</option>
-                                <option value="24">France</option>
-                                <option value="25">Dominican-Republic</option>
-                                <option value="26">Laos</option>
-                                <option value="27">Ecuador</option>
-                                <option value="28">Taiwan</option>
-                                <option value="29">Haiti</option>
-                                <option value="30">Columbia</option>
+                                <option value="31">Portugal</option>
+                                <option value="31">Ireland</option>
+                                <option value="31">France</option>
+                                <option value="1">Dominican-Republic</option>
+                                <option value="21">Laos</option>
+                                <option value="31">Ecuador</option>
+                                <option value="1">Taiwan</option>
+                                <option value="1">Haiti</option>
+                                <option value="21">Columbia</option>
                                 <option value="31">Hungary</option>
-                                <option value="32">Guatemala</option>
-                                <option value="33">Nicaragua</option>
-                                <option value="34">Scotland</option>
-                                <option value="35">Thailand</option>
-                                <option value="36">Yugoslavia</option>
-                                <option value="37">El-Salvador</option>
-                                <option value="38">Trinadad&Tobago</option>
-                                <option value="39">Peru</option>
-                                <option value="40">Hong</option>    
-                                <option value="41">Holand-Netherlands</option> 
+                                <option value="1">Guatemala</option>
+                                <option value="11">Nicaragua</option>
+                                <option value="31">Scotland</option>
+                                <option value="1">Thailand</option>
+                                <option value="31">Yugoslavia</option>
+                                <option value="1">El-Salvador</option>
+                                <option value="1">Trinadad&Tobago</option>
+                                <option value="21">Peru</option>
+                                <option value="1">Hong</option>    
+                                <option value="31">Holand-Netherlands</option> 
                             </select>
                         </td>
                     </tr>
