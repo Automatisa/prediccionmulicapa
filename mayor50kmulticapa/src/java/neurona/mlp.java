@@ -62,10 +62,7 @@ public class mlp {
                     trainingSet.addElement(new SupervisedTrainingElement(new double[]{edad,claseTrabajadora,educacion,
                                                                           estadoCivil,ocupacion,rolFamiliar,raza,sexo,
                                                                           capitalGanado,capitalPerdido,horasps,paisdn}, new double[]{serviciosDB.resultado.getInt(14)}));    
-                    
-                };  
-                
-                
+                };                 
             } 
             
             catch (SQLException ex) {
