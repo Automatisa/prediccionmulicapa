@@ -81,14 +81,6 @@
                     </tr>
                     <tr>
                         <td style="width: 150px">
-                            <label>education-num: </label>
-                        </td>
-                        <td>
-                            <input type="text" name="education-num" id="txteducation-num"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 150px">
                             <label>marital-status: </label>
                         </td>
                         <td>
