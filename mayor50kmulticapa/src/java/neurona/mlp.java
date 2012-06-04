@@ -24,7 +24,7 @@ public class mlp {
     static private double[] tes;
     static MultiLayerPerceptron myMlPerceptron;
     public static String Entrenar() {
-        serviciosDB.conectar("persona", "root", "jony1989");
+        serviciosDB.conectar("persona", "root", "");
         int reg=Transacciones.cuentaRegistros("datos");
         float edad;
             float claseTrabajadora;
