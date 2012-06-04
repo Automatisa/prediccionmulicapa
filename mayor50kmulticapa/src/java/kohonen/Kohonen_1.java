@@ -23,13 +23,14 @@ public class Kohonen_1{
         KohonenLearning e_kohonen=new KohonenLearning();
         TrainingSet trainingSet = new TrainingSet(14, 1); 
         laBase.ConexionBD con= new laBase.ConexionBD();
-                        
+        int mapSize = 0;
+        
 	public Kohonen_1(){
             
         }
         public void ejecutar() throws IOException{
             
-            neuralNetwork = new org.neuroph.nnet.Kohonen(14, 1);   /// CREACION DE LA RED         
+            neuralNetwork = new org.neuroph.nnet.Kohonen(12, 1);   /// CREACION DE LA RED         
             neuralNetwork.randomizeWeights();
             System.out.println("Comienza el entrenamiento...");
             TrainingSet trainSet = collectTrainingSet();
@@ -61,18 +62,17 @@ public class Kohonen_1{
                 {
                     edad=resultado.getFloat(2);
                     claseTrabajadora=resultado.getFloat(3);
-                    educacion=resultado.getFloat(4);
-                    educacion_num=resultado.getFloat(5);
-                    estadoCivil=resultado.getFloat(6);
-                    ocupacion=resultado.getFloat(7);
-                    rolFamiliar=resultado.getFloat(8);
-                    raza=resultado.getFloat(9);
-                    sexo=resultado.getFloat(10);
-                    capitalGanado=resultado.getFloat(11);
-                    capitalPerdido=resultado.getFloat(12);
-                    horasps=resultado.getFloat(13);
-                    paisdn=resultado.getFloat(14);
-                    trainingSet.addElement(new SupervisedTrainingElement(new double[]{edad,claseTrabajadora,educacion,educacion_num, //LETRA A
+                    educacion=resultado.getFloat(4);                    
+                    estadoCivil=resultado.getFloat(5);
+                    ocupacion=resultado.getFloat(6);
+                    rolFamiliar=resultado.getFloat(7);
+                    raza=resultado.getFloat(8);
+                    sexo=resultado.getFloat(9);
+                    capitalGanado=resultado.getFloat(10);
+                    capitalPerdido=resultado.getFloat(11);
+                    horasps=resultado.getFloat(12);
+                    paisdn=resultado.getFloat(13);
+                    trainingSet.addElement(new SupervisedTrainingElement(new double[]{edad,claseTrabajadora,educacion, //LETRA A
                                                                           estadoCivil,ocupacion,rolFamiliar,raza,sexo,
                                                                           capitalGanado,capitalPerdido,horasps,paisdn}, new double[]{resultado.getInt(15)}));    
                 };                                                                       
@@ -98,7 +98,7 @@ public class Kohonen_1{
          resultado = con.ejecutaSQL(sql);
          for (int cont=0; cont<10; cont++){
            resultado.next();
-           double[] input = new double[]{resultado.getFloat(2),resultado.getFloat(3),resultado.getFloat(4),resultado.getFloat(5),resultado.getFloat(6),resultado.getFloat(7),resultado.getFloat(8),resultado.getFloat(9),resultado.getFloat(10),resultado.getFloat(11),resultado.getFloat(12),resultado.getFloat(13),resultado.getFloat(14),resultado.getFloat(15)};
+           double[] input = new double[]{resultado.getFloat(2),resultado.getFloat(3),resultado.getFloat(4),resultado.getFloat(5),resultado.getFloat(6),resultado.getFloat(7),resultado.getFloat(8),resultado.getFloat(9),resultado.getFloat(10),resultado.getFloat(11),resultado.getFloat(12),resultado.getFloat(13)};
            neuralNetwork.setInput(input);
            neuralNetwork.calculate();
            
