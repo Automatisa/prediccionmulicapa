@@ -43,23 +43,15 @@
                         </td>
                         <td>
                             <select name="cboArea" id="cboArea">
-                                <option value="4">Private</option>
-                                <option value="4">Self-emp-not-inc</option>
+                                <option value="5">Private</option>
+                                <option value="3">Self-emp-not-inc</option>
                                 <option value="4">Self-emp-inc</option>
                                 <option value="8">Federal-gov</option>
-                                <option value="8">Local-gov</option>
-                                <option value="8">State-gov</option>
-                                <option value="0">Without-pay</option>
-                                <option value="0">Never-worked</option>
+                                <option value="6">Local-gov</option>
+                                <option value="7">State-gov</option>
+                                <option value="2">Without-pay</option>
+                                <option value="1">Never-worked</option>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 150px">
-                            <label>Fnlwgt: </label>
-                        </td>
-                        <td>
-                            <input type="text" name="txtFnlwgt" id="txtFnlwgt"/>
                         </td>
                     </tr>
                     <tr>
@@ -68,22 +60,22 @@
                         </td>
                         <td>
                             <select name="cboEducacion" id="cboEducacion">
-                                <option value="16">Bachelors</option>
-                                <option value="16">Some-college</option>
-                                <option value="16">Prof-school</option>
-                                <option value="0">11th</option>
-                                <option value="16">HS-grad</option>
-                                <option value="16">Assoc-acdm</option>
-                                <option value="16">Assoc-voc</option>
-                                <option value="0">9th</option>
-                                <option value="0">7th-8th</option>
-                                <option value="0">12th</option>
-                                <option value="16">Masters</option>
-                                <option value="0">1st-4th</option>
-                                <option value="0">10th</option>
+                                <option value="11">Bachelors</option>
+                                <option value="10">Some-college</option>
+                                <option value="9">11th</option>
+                                <option value="9">HS-grad</option>
+                                <option value="13">Assoc-acdm</option>
+                                <option value="12">Assoc-voc</option>
+                                <option value="15">Prof-school</option>
+                                <option value="5">9th</option>
+                                <option value="4">7th-8th</option>
+                                <option value="8">12th</option>
+                                <option value="14">Masters</option>
+                                <option value="2">1st-4th</option>
+                                <option value="6">10th</option>
                                 <option value="16">Doctorate</option>
-                                <option value="0">5th-6th</option>
-                                <option value="0">Preschool</option>
+                                <option value="3">5th-6th</option>
+                                <option value="1">Preschool</option>
                             </select>
                         </td>
                     </tr>
@@ -102,12 +94,12 @@
                         <td>
                             <select name="cboMarital-status" id="cboMarital-status">
                                 <option value="7">Married-civ-spouse</option>
-                                <option value="4">Divorced</option>
+                                <option value="3">Divorced</option>
                                 <option value="4">Never-married</option>
-                                <option value="2">Separated</option>
+                                <option value="1">Separated</option>
                                 <option value="2">Widowed</option>
-                                <option value="7">Married-spouse-absent</option>
-                                <option value="7">Married-AF-spouse</option>
+                                <option value="6">Married-spouse-absent</option>
+                                <option value="5">Married-AF-spouse</option>
                             </select>
                         </td>
                     </tr>
@@ -141,10 +133,10 @@
                         <td>
                             <select name="cboRelationship" id="cboRelationship">
                                 <option value="5">Wife</option>
-                                <option value="3">Own-child</option>
+                                <option value="2">Own-child</option>
                                 <option value="6">Husband</option>
                                 <option value="4">Not-in-family</option>
-                                <option value="2">Other-relative</option>
+                                <option value="3">Other-relative</option>
                                 <option value="1">Unmarried</option>
                             </select>
                         </td>
@@ -169,8 +161,8 @@
                         </td>
                         <td>
                             <select name="cboSexo" id="cboSexo">
-                                <option value="2">Female</option>
-                                <option value="1">Male</option>
+                                <option value="1">Female</option>
+                                <option value="2">Male</option>
                             </select>
                         </td>
                     </tr>

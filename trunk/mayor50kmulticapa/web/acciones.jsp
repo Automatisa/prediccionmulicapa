@@ -16,7 +16,6 @@
     { 
         double [] datos={Double.parseDouble(request.getParameter("edad")),
         Double.parseDouble(request.getParameter("area")),
-        Double.parseDouble(request.getParameter("fnlwgt")),
         Double.parseDouble(request.getParameter("educacion")),
         Double.parseDouble(request.getParameter("educacion_num")),
         Double.parseDouble(request.getParameter("estadoCiv")),

@@ -36,7 +36,7 @@ import java.util.logging.Logger;
             }
             try {
 
-                this.conexion= DriverManager.getConnection("jdbc:mysql://127.0.0.1/persona","root","");
+                this.conexion= DriverManager.getConnection("jdbc:mysql://127.0.0.1/persona","root","jony1989");
                 //this.conexion= DriverManager.getConnection("jdbc:postgresql://localhost:5432/biblioteca",paramString1,paramString2); //connect to the db
 //connect to the db
 

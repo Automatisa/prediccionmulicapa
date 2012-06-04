@@ -24,9 +24,8 @@ $(document).ready(function(e){
         else
             edad=0;
         var area=Number($('#cboArea option:selected').attr("value"))/8;
-        var fnlwgt=Number($('#txtFnlwgt').attr("value"))/1000000;
         var educacion=Number($('#cboEducacion option:selected').attr("value"))/16;
-        var educacion_num=Number($('#txteducation-num').attr("value"))/20;
+        var educacion_num=Number($('#txteducation-num').attr("value"))/16;
         var estadoCiv=Number($('#cboMarital-status option:selected').attr("value"))/7;
         var ocupacion=Number($('#cboOcupacion option:selected').attr("value"))/14;
         var rol=Number($('#cboRelationship option:selected').attr("value"))/6;
@@ -36,7 +35,7 @@ $(document).ready(function(e){
         if(capitalg>7000)
             capitalg=1;
         else
-            capitalg=capitalg/7000;
+            capitalg=capitalg/7000
         var capitalp=Number($('#txtcapital-loss').attr("value"))/1000000;
         var horasps=Number($('#hours-per-week').attr("value"))/100;
         var pais=Number($('#cboPais option:selected').attr("value"))/41;
@@ -44,7 +43,6 @@ $(document).ready(function(e){
             type:"GET",
             data: "op=2&edad="+edad+
                 "&area="+area+
-                "&fnlwgt="+fnlwgt+
                 "&educacion="+educacion+
                 "&educacion_num="+educacion_num+
                 "&estadoCiv="+estadoCiv+

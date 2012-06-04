@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
 public class Transacciones {
     public static boolean cargarDatos(String tabla)
     {    
-        if(serviciosDB.ejecutarConsulta("SELECT * FROM "+tabla+" WHERE oid<5000"))
+        if(serviciosDB.ejecutarConsulta("SELECT * FROM "+tabla+" WHERE oid<500"))
             return true;
         return false;
     }
