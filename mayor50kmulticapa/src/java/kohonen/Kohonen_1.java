@@ -61,21 +61,20 @@ public class Kohonen_1{
                 {
                     edad=resultado.getFloat(2);
                     claseTrabajadora=resultado.getFloat(3);
-                    fnlwgt=resultado.getFloat(4);
-                    educacion=resultado.getFloat(5);
-                    educacion_num=resultado.getFloat(6);
-                    estadoCivil=resultado.getFloat(7);
-                    ocupacion=resultado.getFloat(8);
-                    rolFamiliar=resultado.getFloat(9);
-                    raza=resultado.getFloat(10);
-                    sexo=resultado.getFloat(11);
-                    capitalGanado=resultado.getFloat(12);
-                    capitalPerdido=resultado.getFloat(13);
-                    horasps=resultado.getFloat(14);
-                    paisdn=resultado.getFloat(15);
-                    trainingSet.addElement(new SupervisedTrainingElement(new double[]{edad,claseTrabajadora,fnlwgt,educacion,educacion_num, //LETRA A
+                    educacion=resultado.getFloat(4);
+                    educacion_num=resultado.getFloat(5);
+                    estadoCivil=resultado.getFloat(6);
+                    ocupacion=resultado.getFloat(7);
+                    rolFamiliar=resultado.getFloat(8);
+                    raza=resultado.getFloat(9);
+                    sexo=resultado.getFloat(10);
+                    capitalGanado=resultado.getFloat(11);
+                    capitalPerdido=resultado.getFloat(12);
+                    horasps=resultado.getFloat(13);
+                    paisdn=resultado.getFloat(14);
+                    trainingSet.addElement(new SupervisedTrainingElement(new double[]{edad,claseTrabajadora,educacion,educacion_num, //LETRA A
                                                                           estadoCivil,ocupacion,rolFamiliar,raza,sexo,
-                                                                          capitalGanado,capitalPerdido,horasps,paisdn}, new double[]{resultado.getInt(16)}));    
+                                                                          capitalGanado,capitalPerdido,horasps,paisdn}, new double[]{resultado.getInt(15)}));    
                 };                                                                       
                 
                     //e_kohonen.setNeuralNetwork(createNetwork(14,1));
