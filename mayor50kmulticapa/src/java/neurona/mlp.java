@@ -27,7 +27,6 @@ public class mlp {
         serviciosDB.conectar("persona", "root", "jony1989");
         int reg=Transacciones.cuentaRegistros("datos");
         float edad;
-            double fnlwgt;
             float claseTrabajadora;
             float educacion;
             float educacion_num;
@@ -42,7 +41,7 @@ public class mlp {
             float paisdn;
             int salida;
             long tiempo = System.currentTimeMillis();
-        TrainingSet trainingSet = new TrainingSet(14, 1);
+        TrainingSet trainingSet = new TrainingSet(13, 1);
         if(Transacciones.cargarDatos("datos"))
         {
             try {
@@ -51,22 +50,22 @@ public class mlp {
                 {
                     edad=serviciosDB.resultado.getFloat(2);
                     claseTrabajadora=serviciosDB.resultado.getFloat(3);
-                    fnlwgt=serviciosDB.resultado.getFloat(4);
-                    educacion=serviciosDB.resultado.getFloat(5);
-                    educacion_num=serviciosDB.resultado.getFloat(6);
-                    estadoCivil=serviciosDB.resultado.getFloat(7);
-                    ocupacion=serviciosDB.resultado.getFloat(8);
-                    rolFamiliar=serviciosDB.resultado.getFloat(9);
-                    raza=serviciosDB.resultado.getFloat(10);
-                    sexo=serviciosDB.resultado.getFloat(11);
-                    capitalGanado=serviciosDB.resultado.getFloat(12);
-                    capitalPerdido=serviciosDB.resultado.getFloat(13);
-                    horasps=serviciosDB.resultado.getFloat(14);
-                    paisdn=serviciosDB.resultado.getFloat(15);
-                    trainingSet.addElement(new SupervisedTrainingElement(new double[]{edad,claseTrabajadora,fnlwgt,educacion,educacion_num, //LETRA A
+                    educacion=serviciosDB.resultado.getFloat(4);
+                    educacion_num=serviciosDB.resultado.getFloat(5);
+                    estadoCivil=serviciosDB.resultado.getFloat(6);
+                    ocupacion=serviciosDB.resultado.getFloat(7);
+                    rolFamiliar=serviciosDB.resultado.getFloat(8);
+                    raza=serviciosDB.resultado.getFloat(9);
+                    sexo=serviciosDB.resultado.getFloat(10);
+                    capitalGanado=serviciosDB.resultado.getFloat(11);
+                    capitalPerdido=serviciosDB.resultado.getFloat(12);
+                    horasps=serviciosDB.resultado.getFloat(13);
+                    paisdn=serviciosDB.resultado.getFloat(14);
+                    trainingSet.addElement(new SupervisedTrainingElement(new double[]{edad,claseTrabajadora,educacion, //LETRA A
                                                                           estadoCivil,ocupacion,rolFamiliar,raza,sexo,
-                                                                          capitalGanado,capitalPerdido,horasps,paisdn}, new double[]{serviciosDB.resultado.getInt(16)}));    
-                };
+                                                                          capitalGanado,capitalPerdido,horasps,paisdn}, new double[]{serviciosDB.resultado.getInt(15)}));    
+                    
+                };  
                 
                 // llamada a tu algoritmo
                 
@@ -75,10 +74,10 @@ public class mlp {
             }
         }
         
-        myMlPerceptron = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 14,18,1);
+        myMlPerceptron = new MultiLayerPerceptron(TransferFunctionType.SIGMOID, 13,18,1);
         // learn the training set
         ((LMS) myMlPerceptron.getLearningRule()).setMaxError(0.05);
-        ((LMS) myMlPerceptron.getLearningRule()).setMaxIterations(3000);
+        ((LMS) myMlPerceptron.getLearningRule()).setMaxIterations(1000);
         ((LMS) myMlPerceptron.getLearningRule()).setLearningRate(0.5);
         myMlPerceptron.learnInSameThread(trainingSet);
 
@@ -89,7 +88,7 @@ public class mlp {
         myMlPerceptron.save("Perceptron.net");
         tiempo -= System.currentTimeMillis();
 //        return myMlPerceptron;
-        return ("Entrenado en " + (-tiempo/1000f) + " segundos.");
+        return ("Entrenado en " + (-tiempo/1000f) + " segundos ");
     }
     public static String provar(double[] t)
     {
